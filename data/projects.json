@@ -1,0 +1,193 @@
+[
+    {
+        "id": 1,
+        "title": "DE Plafon",
+        "image": "https://drive.google.com/uc?id=1rvGhKcrrfpNeAN8AIz2IEGySpISF8Bpp",
+        "description": "Led the development of DE Plafon's company profile website, emphasizing their premium ceiling and wall solutions. The site serves as a central hub for showcasing products, client testimonials, and accomplished projects. Through strategic design, the platform enhances DE Plafon's professionalism and effectively engages users.",
+        "techStack": ["Laravel", "Livewire", "Tailwind CSS", "MySQL"],
+        "selected": true,
+        "year": "2021",
+        "madeAt": "Freelance Project",
+        "github": "",
+        "shortDesc": "Develop Company profile website for DE Plafon for showcasing products, client testimonials, and accomplished projects."
+    },
+    {
+        "id": 2,
+        "title": "Data Maya Consulting",
+        "link": "https://datamaya.com/",
+        "image": "https://drive.google.com/uc?id=1GsmdEe9QuOx_ONiD2TvfmflMj_i5U9tS",
+        "description": "Developed a dynamic company profile website for Data Maya Consulting, integrating a content management system (CMS) for streamlined administrative control over assets and content updates. This implementation ensures a dynamic and easily adaptable online presence for the company.",
+        "techStack": ["Laravel", "jQuery", "Bootstrap CSS", "MySQL"],
+        "selected": true,
+        "year": "2022",
+        "madeAt": "Freelance Project",
+        "shortDesc": "Develop Company profile website for Data Maya Consulting with a content management system (CMS) for streamlined administrative control over assets and content updates."
+    },
+    {
+        "id": 3,
+        "title": "EMIS UIN Suska Riau",
+        "description": "Engineered a system for UIN Suska Riau, ensuring efficient management and synchronization of data for teachers and students from the academic portal. This system streamlines data alignment, facilitating seamless transmission to the Indonesian Ministry of Religious Affairs.",
+        "techStack": ["Laravel", "jQuery", "Bootstrap CSS", "MySQL"],
+        "selected": false,
+        "year": "2022",
+        "madeAt": "Internship Project",
+        "shortDesc": "Develop System for UIN Suska Riau, ensuring efficient management and synchronization of data for teachers and students from the academic portal."
+    },
+    {
+        "id": 4,
+        "title": "BUDI Kemdikbud",
+        "link": "https://budi.kemdikbud.go.id/",
+        "image": "https://drive.google.com/uc?id=1FWh0aCqrzp-DO5izn_yOgkL5K_PM0nDJ",
+        "description": "Designed responsive layouts for various screen sizes, with a focus on mobile optimization, across key pages including login, register, profile, author, contact, and blog.",
+        "techStack": ["Laravel", "Bootstrap CSS", "CSS"],
+        "selected": true,
+        "year": "2022",
+        "madeAt": "Freelance Project",
+        "shortDesc": "Designed responsive layouts for various screen sizes, with a focus on mobile optimization, across key pages including login, register, profile, author, contact, and blog."
+    },
+    {
+        "id": 5,
+        "title": "Hallo Doctor Landing Page",
+        "description": "Developed a landing page for Hello Doctor by translating the design from Figma into a responsive and functional website through slicing and coding.",
+        "techStack": ["React JS", "Tailwind CSS"],
+        "selected": false,
+        "year": "2022",
+        "madeAt": "Freelance Project",
+        "link": "https://hallo-doctor.vercel.app/",
+        "shortDesc": "Developed a landing page for Hello Doctor by translating the design from Figma into a responsive and functional website through slicing and coding."
+    },
+    {
+        "id": 6,
+        "title": "BMN UIN Suska Riau",
+        "description": "Developed an application for inventory management at UIN Suska Riau, streamlining administrative processes between departments and providing a comprehensive history of each item for efficient tracking.",
+        "techStack": ["Laravel", "jQuery", "Bootstrap CSS", "MySQL"],
+        "selected": false,
+        "year": "2022",
+        "madeAt": "Freelance Project",
+        "shortDesc": "Developed an application for inventory management at UIN Suska Riau, streamlining administrative processes between departments and providing a comprehensive history of each item for efficient tracking."
+    },
+    {
+        "id": 7,
+        "title": "PTIPD UIN Suska Riau",
+        "link": "https://ptipd.uin-suska.ac.id/",
+        "image": "https://drive.google.com/uc?id=1iAhtKX8_xdZ2ipyvXJKKOZazyvscW4QE",
+        "description": "Created a dynamic company profile for PTIPD UIN Suska Riau, meticulously highlighting the organization's strengths, services, and achievements. The profile serves as a comprehensive representation, showcasing the company's commitment to excellence and professionalism.",
+        "techStack": ["Wordpress"],
+        "selected": true,
+        "year": "2023",
+        "madeAt": "Freelance Project",
+        "shortDesc": "Created a dynamic company profile for PTIPD UIN Suska Riau, meticulously highlighting the organization's strengths, services, and achievements."
+    },
+    {
+        "id": 8,
+        "title": "Al Huda Activity Application",
+        "description": "Developed an application for Al Huda Islamic Boarding School, facilitating the management of student activities and providing a comprehensive history of each activity for efficient tracking.",
+        "techStack": ["Laravel", "jQuery", "Bootstrap CSS", "MySQL"],
+        "selected": false,
+        "year": "2023",
+        "madeAt": "Garuda Cyber Indonesia",
+        "shortDesc": "Developed an application for Al Huda School, facilitating the management of student activities and providing a comprehensive history of each activity for efficient tracking."
+    },
+    {
+        "id": 9,
+        "title": "Garuda Kasir Desktop Serial Key Panel",
+        "description": "Developed a serial key panel for Garuda Kasir Desktop, enabling the management of serial keys for the application and facilitating the distribution of licenses to customers.",
+        "techStack": ["Laravel", "jQuery", "Bootstrap CSS", "MySQL"],
+        "selected": false,
+        "year": "2023",
+        "madeAt": "Garuda Cyber Indonesia",
+        "shortDesc": "Developed a serial key panel for Garuda Kasir Desktop, enabling the management of serial keys for the application and facilitating the distribution of licenses to customers."
+    },
+    {
+        "id": 10,
+        "title": "CBT UIN Suska Riau",
+        "description": "Developed a website testing platform obtained English and Arabic language skills for UIN Suska Riau. The test accesible for students and the general public.",
+        "techStack": ["Laravel", "jQuery", "Material UI", "MySQL"],
+        "selected": false,
+        "year": "2023",
+        "madeAt": "Garuda Cyber Indonesia",
+        "link": "https://languagecertification.id",
+        "shortDesc": "Developed a website testing platform obtained English and Arabic language skills for UIN Suska Riau. The test accesible for students and the general public."
+    },
+    {
+        "id": 11,
+        "title": "E-Learning Aufia Islamic Boarding School",
+        "description": "Enhanced the e-learning platform Aufia through the development of new features and improvements to existing functionalities. The updates aim to elevate the user experience, providing additional capabilities and refining existing features for a more seamless and effective e-learning environment.",
+        "techStack": ["Yii2", "Bootstrap CSS", "MySQL"],
+        "selected": false,
+        "year": "2023",
+        "madeAt": "Garuda Cyber Indonesia",
+        "shortDesc": "Enhanced the e-learning platform Aufia through the development of new features and improvements to existing functionalities."
+    },
+    {
+        "id": 12,
+        "title": "Academic Portal Aufia Islamic Boarding School",
+        "description": "Enhanced the academic portal for Aufia Islamic Boarding School through the development of new features and improvements to existing functionalities.",
+        "techStack": ["Yii2", "Bootstrap CSS", "MySQL"],
+        "selected": false,
+        "year": "2023",
+        "madeAt": "Garuda Cyber Indonesia",
+        "shortDesc": "Enhanced the academic portal for Aufia Islamic Boarding School through the development of new features and improvements to existing functionalities."
+    },
+    {
+        "id": 13,
+        "title": "Al Huda Extracurricular Application",
+        "description": "Developed an extracurricular activity application for Al Huda School, designed to efficiently manage extracurricular data including clubs, advisors, members, activities, and attendance records. This application streamlines the process of organizing and tracking extracurricular engagements for the school.",
+        "techStack": ["Laravel", "jQuery", "Bootstrap CSS", "MySQL"],
+        "selected": false,
+        "year": "2023",
+        "madeAt": "Garuda Cyber Indonesia",
+        "shortDesc": "Developed an extracurricular activity application for Al Huda School, designed to efficiently manage extracurricular data including clubs, advisors, members, activities, and attendance records."
+    },
+    {
+        "id": 14,
+        "title": "Lancang Kuning V2 Admin Panel",
+        "description": "Advanced the development of Admin Panel Lancang Kuning V2, a Content Management System (CMS) tailored for news content creation. This involved making various settings dynamic, providing an intuitive interface for efficiently managing and updating news content.",
+        "techStack": ["Laravel", "jQuery", "Bootstrap CSS", "MySQL"],
+        "selected": false,
+        "year": "2023",
+        "madeAt": "Garuda Cyber Indonesia",
+        "shortDesc": "Advanced the development of Admin Panel Lancang Kuning V2, a Content Management System (CMS) tailored for news content creation."
+    },
+    {
+        "id": 15,
+        "title": "STIE Riau Akbar Personnel System",
+        "description": "Continued the development of the personnel system for STIE Riau Akbar, with a focus on creating a comprehensive payroll system. Implemented features include salary input, tax calculations, and the generation of detailed payslips for faculty, staff, and teachers. This system ensures a streamlined and accurate payroll process for efficient financial management.",
+        "techStack": ["Laravel", "jQuery", "Bootstrap CSS", "MySQL"],
+        "selected": false,
+        "year": "2023",
+        "madeAt": "Garuda Cyber Indonesia",
+        "shortDesc": "Continued the development of the personnel system for STIE Riau Akbar, with a focus on creating a comprehensive payroll system."
+    },
+    {
+        "id": 16,
+        "title": "Executive Report Aufia Islamic Boarding School",
+        "description": "Developed an executive report for Aufia Islamic Boarding School, providing a comprehensive overview of the school's performance and achievements. This report serves as a valuable resource for the school's management, facilitating strategic decision-making and ensuring the school's continued success.",
+        "techStack": ["Laravel", "jQuery", "Bootstrap CSS", "MySQL"],
+        "selected": false,
+        "year": "2023",
+        "madeAt": "Garuda Cyber Indonesia",
+        "shortDesc": "Developed an executive report for Aufia Islamic Boarding School, providing a comprehensive overview of the school's performance and achievements."
+    },
+    {
+        "id": 17,
+        "title": "Aufia Islamic Boarding School Personnel System",
+        "description": "Continued the development of the personnel system for Aufia, introducing features for leave requests, sick leave, and permissions. Additionally, implemented a notification system to alert relevant parties of any submitted requests, enhancing the efficiency of the employee management process.",
+        "techStack": ["Laravel", "jQuery", "Bootstrap CSS", "MySQL"],
+        "selected": false,
+        "year": "2023",
+        "madeAt": "Garuda Cyber Indonesia",
+        "shortDesc": "Continued the development of the personnel system for Aufia, introducing features for leave requests, sick leave, and permissions."
+    },
+    {
+        "id": 18,
+        "title": "Sirri Clinic Website",
+        "description": "Developed a website for Sirri Clinic, a beauty clinic facility. This site serves as a hub for showcasing services, facilities and client testimonials. Through strategic design, the platform enhances Sirri Clinic's professionalism and engages users effectively.",
+        "techStack": ["Laravel", "jQuery", "Bootstrap CSS", "MySQL"],
+        "selected": false,
+        "year": "2023",
+        "madeAt": "Garuda Cyber Indonesia",
+        "link": "https://sirriclinic.id/",
+        "shortDesc": "Developed a website for Sirri Clinic, a beauty clinic facility. This site serves as a hub for showcasing services, facilities and client testimonials."
+    }
+]

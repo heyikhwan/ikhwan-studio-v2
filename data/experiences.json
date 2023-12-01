@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": "Freelance Web Developer",
+        "position": "Full Stack Developer",
+        "start": "2021",
+        "end": "Present",
+        "description": "In my freelance role, I analyze client needs, install websites, and turn Figma designs into user-friendly, responsive websites. I ensure optimal design for various screen sizes, follow SEO standards for better search results, and increase the effectiveness of digital marketing through company profile sites. I also create user-friendly admin panels, allowing clients to easily customize website content and various other types of application systems.",
+        "skills": ["Laravel", "React Js", "jQuery", "Bootstrap CSS", "Tailwind CSS", "MySQL"]
+    },
+    {
+        "id": 2,
+        "title": "Internship at PTIPD UIN Suska Riau",
+        "position": "Full Stack Developer",
+        "start": "FEB",
+        "end": "APR 2022",
+        "description": "During my internship, I actively collaborated with the Application and Data Teams to create the \"EMIS UIN Suska\" website application. In this role, I played a key part in the development of the application, focusing on efficient reporting of student and lecturer data for UIN Suska Riau to the Indonesian Ministry of Religious Affairs.",
+        "skills": ["Laravel", "Bootstrap CSS", "MySQL"]
+    },
+    {
+        "id": 3,
+        "title": "PT. Garuda Cyber Indonesia",
+        "position": "Programmer",
+        "start": "2023",
+        "end": "Present",
+        "description": "I've created many apps, building from scratch and expanding existing apps. My main focus revolves around creating and developing school academic websites. Throughout this process, I became adept at working independently and also thrived in a collaborative environment.",
+        "link": "https://garudacyber.co.id/",
+        "skills": ["Laravel", "Yii2", "jQuery", "Bootstrap CSS", "MySQL"]
+    }
+]
