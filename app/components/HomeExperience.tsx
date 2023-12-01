@@ -35,12 +35,13 @@ const HomeExperience = () => {
                     ))}
                 </ol>
                 <div className="mt-12">
-                    {/* // TODO: can't download cv */}
                     <a
                         className="inline-flex items-center leading-tight font-semibold text-slate-200 group"
-                        aria-label="View Full Resume"
-                        href="/CV_Ikhwanul_Akhmad_DLY.pdf"
+                        aria-label="View Full Curriculum Vitae"
+                        href="/cv_ikhwanul_akhmad_dly.pdf"
                         rel="noreferrer"
+                        target="_blank"
+                        download
                     >
                         <span>
                             <span className="border-b border-transparent pb-px transition group-hover:border-sky-300 motion-reduce:transition-none">
