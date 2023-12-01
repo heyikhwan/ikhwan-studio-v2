@@ -54,7 +54,7 @@ const ProjectCard = ({
             {/* // TODO: image url */}
             {/* // TODO: Tech Stack */}
             <Image
-                src={image ?? "/github-placeholder.png"}
+                src={image ? `/${image}` : `/github-placeholder.png`}
                 width={400}
                 height={200}
                 alt={title}

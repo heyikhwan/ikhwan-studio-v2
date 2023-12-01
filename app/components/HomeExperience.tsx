@@ -1,9 +1,8 @@
-import { type } from "os";
+import Link from "next/link";
 import experiences from "../../data/experiences.json";
 import ExperienceCard from "./ExperienceCard";
 
 const HomeExperience = () => {
-
     const experience = experiences.sort((a, b) => {
         return b.id - a.id;
     });
@@ -21,7 +20,7 @@ const HomeExperience = () => {
             </div>
             <div>
                 <ol className="group/list">
-                    { experience.map((item) => (
+                    {experience.map((item) => (
                         <li className="mb-12" key={item.id}>
                             <ExperienceCard
                                 title={item.title}
@@ -36,18 +35,22 @@ const HomeExperience = () => {
                     ))}
                 </ol>
                 <div className="mt-12">
-                    {/*  TODO: chage resume filer */}
+                    {/* // TODO: can't download cv */}
                     <a
                         className="inline-flex items-center leading-tight font-semibold text-slate-200 group"
                         aria-label="View Full Resume"
-                        href="/CV_Ikhwanul_Akhmad_DLY.pdf" download={true}
+                        href="/CV_Ikhwanul_Akhmad_DLY.pdf"
+                        rel="noreferrer"
                     >
                         <span>
                             <span className="border-b border-transparent pb-px transition group-hover:border-sky-300 motion-reduce:transition-none">
                                 View Curriculum
                             </span>
                             <span className="whitespace-nowrap">
-                                <span className="border-b border-transparent pb-px transition group-hover:border-sky-300 motion-reduce:transition-none"> Vitae</span>
+                                <span className="border-b border-transparent pb-px transition group-hover:border-sky-300 motion-reduce:transition-none">
+                                    {" "}
+                                    Vitae
+                                </span>
                                 <i className="fa-solid fa-arrow-right-long ml-2 inline-block h-3 w-3 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none"></i>
                             </span>
                         </span>
