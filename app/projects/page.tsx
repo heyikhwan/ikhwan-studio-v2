@@ -1,9 +1,13 @@
 import Link from "next/link";
-import projects from "../../data/projects.json";
 import Badge from "../components/Badge";
+import { promises as fs } from "fs";
 
-const ProjectPage = () => {
-    const project = projects.sort((a, b) => {
+const ProjectPage = async () => {
+    const projects = await fs.readFile(
+        process.cwd() + "/data/projects.json",
+        "utf-8"
+    );
+    const data = JSON.parse(projects).sort((a: any, b: any) => {
         return b.id - a.id;
     });
 
@@ -43,8 +47,8 @@ const ProjectPage = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {project &&
-                        project.map((item) => (
+                    {data &&
+                        data.map((item: any) => (
                             <tr
                                 className="border-b border-slate-300/10 last:border-none"
                                 key={item.id}
@@ -80,7 +84,9 @@ const ProjectPage = () => {
                                         </div>
                                         <div className="hidden sm:block">
                                             {item.title}
-                                            <p className="mt-1 text-xs text-gray-500">{item.shortDesc}</p>
+                                            <p className="mt-1 text-xs text-gray-500">
+                                                {item.shortDesc}
+                                            </p>
                                         </div>
                                     </div>
                                 </td>
@@ -93,7 +99,10 @@ const ProjectPage = () => {
                                     <ul className="flex -translate-y-1.5 flex-wrap">
                                         {item.techStack &&
                                             item.techStack.map(
-                                                (item, index) => (
+                                                (
+                                                    item: string,
+                                                    index: number
+                                                ) => (
                                                     <li
                                                         className="my-1 mr-1.5"
                                                         key={index}

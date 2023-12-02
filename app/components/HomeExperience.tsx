@@ -1,9 +1,12 @@
-import Link from "next/link";
-import experiences from "../../data/experiences.json";
 import ExperienceCard from "./ExperienceCard";
+import { promises as fs } from "fs";
 
-const HomeExperience = () => {
-    const experience = experiences.sort((a, b) => {
+const HomeExperience = async () => {
+    const experiecnces = await fs.readFile(
+        process.cwd() + "/data/experiences.json",
+        "utf-8"
+    );
+    const data = JSON.parse(experiecnces).sort((a: any, b: any) => {
         return b.id - a.id;
     });
 
@@ -20,7 +23,7 @@ const HomeExperience = () => {
             </div>
             <div>
                 <ol className="group/list">
-                    {experience.map((item) => (
+                    {data.map((item: any) => (
                         <li className="mb-12" key={item.id}>
                             <ExperienceCard
                                 title={item.title}

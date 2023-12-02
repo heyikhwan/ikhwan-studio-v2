@@ -1,9 +1,13 @@
 import ProjectCard from "./ProjectCard";
-import projects from "../../data/projects.json";
 import Link from "next/link";
+import { promises as fs } from "fs";
 
-const HomeProject = () => {
-    const project = projects.sort((a, b) => {
+const HomeProject = async () => {
+    const projects = await fs.readFile(
+        process.cwd() + "/data/projects.json",
+        "utf-8"
+    );
+    const data = JSON.parse(projects).sort((a: any, b: any) => {
         return b.id - a.id;
     });
 
@@ -20,8 +24,8 @@ const HomeProject = () => {
             </div>
             <div>
                 <ul className="group/list">
-                    {project.map(
-                        (item) =>
+                    {data.map(
+                        (item: any) =>
                             item.selected && (
                                 <li className="mb-12" key={item.id}>
                                     <ProjectCard
