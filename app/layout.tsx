@@ -4,6 +4,7 @@ import "./globals.css";
 import SpotLight from "./components/Spotlight";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
     description:
         "Ikhwanul Akhmad. DLY is a Full Stack Developer from Indonesia. He is a Laravel, ReactJS, and NextJS enthusiast.",
     keywords: [
-		"ikhwan",
+        "ikhwan",
         "ikhwanul akhmad",
         "ikhwanul",
         "akhmad",
@@ -33,11 +34,11 @@ export const metadata: Metadata = {
         "ikhwanul akhmad dly web developer reactjs",
         "ikhwanul akhmad dly web developer nextjs",
         "ikhwanul akhmad dly web developer full stack",
-		"ikhwan programmer",
-		"ikhwanul programmer",
-		"ikhwanul akhmad programmer",
-		"ikhwanul akhmad dly programmer",
-		"ikhwanul akhmad dly web programmer",
+        "ikhwan programmer",
+        "ikhwanul programmer",
+        "ikhwanul akhmad programmer",
+        "ikhwanul akhmad dly programmer",
+        "ikhwanul akhmad dly web programmer",
     ],
 };
 
@@ -55,6 +56,7 @@ export default function RootLayout({
                     <SpotLight />
                     {children}
                 </div>
+                <SpeedInsights />
                 <Analytics />
 
                 <Script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" />
