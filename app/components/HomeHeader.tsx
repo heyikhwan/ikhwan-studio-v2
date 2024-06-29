@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-const HomeHeader = () => {
+const HomeHeader = ({ activeSection }: { activeSection: string }) => {
     return (
         <>
             <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
@@ -10,7 +10,7 @@ const HomeHeader = () => {
                         <Link href="/">Ikhwanul Akhmad. DLY</Link>
                     </h1>
                     <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
-                        Full Stack Web Developer | Laravel | React JS | Next JS
+                        Full Stack Web Developer
                     </h2>
                     <p className="mt-4 max-w-sm leading-normal">
                         I specialize in bridging the idea to exceptional and
@@ -26,8 +26,8 @@ const HomeHeader = () => {
                                     className="group flex items-center py-3"
                                     href="#about"
                                 >
-                                    <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
-                                    <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
+                                    <span className={`nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none ${activeSection === "about" ? "w-16 bg-slate-200" : ""}`}></span>
+                                    <span className={`nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200 ${activeSection === "about" ? "text-slate-100" : ""}`}>
                                         About
                                     </span>
                                 </Link>
@@ -37,8 +37,8 @@ const HomeHeader = () => {
                                     className="group flex items-center py-3"
                                     href="#experience"
                                 >
-                                    <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
-                                    <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
+                                    <span className={`nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none ${activeSection === "experience" ? "w-16 bg-slate-200" : ""}`}></span>
+                                    <span className={`nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200 ${activeSection === "experience" ? "text-slate-100" : ""}`}>
                                         Experience
                                     </span>
                                 </Link>
@@ -48,8 +48,8 @@ const HomeHeader = () => {
                                     className="group flex items-center py-3"
                                     href="#projects"
                                 >
-                                    <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
-                                    <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
+                                    <span className={`nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none ${activeSection === "projects" ? "w-16 bg-slate-200" : ""}`}></span>
+                                    <span className={`nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200 ${activeSection === "projects" ? "text-slate-100" : ""}`}>
                                         Projects
                                     </span>
                                 </Link>

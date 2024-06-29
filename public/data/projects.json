@@ -100,14 +100,14 @@
     },
     {
         "id": 10,
-        "title": "CBT UIN Suska Riau",
-        "description": "Developed a website testing platform obtained English and Arabic language skills for UIN Suska Riau. The test accesible for students and the general public.",
+        "title": "Language Certification",
+        "description": "Developed a website test platform obtained English and Arabic language skills for UIN Suska Riau. The test accesible for students and the general public.",
         "techStack": ["Laravel", "jQuery", "Material UI", "MySQL"],
         "selected": false,
         "year": "2023",
         "madeAt": "Garuda Cyber Indonesia",
         "link": "https://languagecertification.id",
-        "shortDesc": "Developed a website testing platform obtained English and Arabic language skills for UIN Suska Riau. The test accesible for students and the general public."
+        "shortDesc": "Developed a website test platform obtained English and Arabic language skills for UIN Suska Riau. The test accesible for students and the general public."
     },
     {
         "id": 11,
@@ -172,21 +172,11 @@
     {
         "id": 17,
         "title": "Aufia Islamic Boarding School Personnel System",
-        "description": "Continued the development of the personnel system for Aufia, introducing features for leave requests, sick leave, and permissions. Additionally, implemented a notification system to alert relevant parties of any submitted requests, enhancing the efficiency of the employee management process.",
+        "description": "Continued the development of the personnel system for Aufia, which initially focused on introducing features for leave requests, sick leave, and permissions. Subsequently, expanded the system's capabilities by creating a comprehensive payroll system. The newly implemented features include calculating basic salary, allowances, deduction, and generating detailed pay slips for teachers and employees. Additionally, integrated a notification system to alert relevant parties of any submitted requests, enhancing the efficiency of the employee management process. This integrated system ensures efficient and accurate personnel and payroll processing, facilitating streamlined financial management for Aufia.",
         "techStack": ["Laravel", "jQuery", "Bootstrap CSS", "MySQL"],
         "selected": false,
         "year": "2023",
         "madeAt": "Garuda Cyber Indonesia",
-        "shortDesc": "Continued the development of the personnel system for Aufia, introducing features for leave requests, sick leave, and permissions."
-    },
-    {
-        "id": 18,
-        "title": "Sirri Clinic Website",
-        "description": "Developed a website for Sirri Clinic, a beauty clinic facility. This site serves as a hub for showcasing services, facilities and client testimonials. Through strategic design, the platform enhances Sirri Clinic's professionalism and engages users effectively.",
-        "techStack": ["Laravel", "jQuery", "Bootstrap CSS", "MySQL"],
-        "selected": false,
-        "year": "2023",
-        "madeAt": "Garuda Cyber Indonesia",
-        "shortDesc": "Developed a website for Sirri Clinic, a beauty clinic facility. This site serves as a hub for showcasing services, facilities and client testimonials."
+        "shortDesc": "Enhanced Aufia's personnel system with a comprehensive payroll module, streamlining salary calculations, allowances, and pay slip generation alongside efficient leave management and timely notifications."
     }
 ]

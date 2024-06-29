@@ -1,15 +1,22 @@
+"use client";
+
 import Link from "next/link";
 import Badge from "../components/Badge";
-import { promises as fs } from "fs";
+import { useEffect, useState } from "react";
 
-const ProjectPage = async () => {
-    const projects = await fs.readFile(
-        process.cwd() + "/data/projects.json",
-        "utf-8"
-    );
-    const data = JSON.parse(projects).sort((a: any, b: any) => {
-        return b.id - a.id;
-    });
+const ProjectPage = () => {
+    const [data, setData] = useState<any[]>([]);
+
+    useEffect(() => {
+        const fetchProjects = async () => {
+            const response = await fetch("/data/projects.json");
+            const projects = await response.json();
+            const sortedProjects = projects.sort((a: any, b: any) => b.id - a.id);
+            setData(sortedProjects);
+        };
+
+        fetchProjects();
+    }, []);
 
     return (
         <main className="lg:py-24">
