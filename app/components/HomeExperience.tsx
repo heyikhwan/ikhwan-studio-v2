@@ -15,9 +15,6 @@ const HomeExperience = () => {
         fetchExperiences();
     }, []);
 
-    console.log(data);
-    
-
     return (
         <section
             id="experience"
