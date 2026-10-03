@@ -34,7 +34,7 @@ const ProjectPage = () => {
                 id="content"
                 className="mt-12 w-full border-collapse text-left"
             >
-                <thead className="sticky top-0 z-10 border-b border-slate-300/10 bg-slate-900/75 px-6 py-5 backdrop-blur">
+                <thead className="sticky top-0 z-10 border-b border-slate-300/10 bg-slate-900/75 px-6 py-5 backdrop-blur-sm">
                     <tr>
                         <th className="py-4 pr-8 text-sm font-semibold text-slate-200">
                             Year
