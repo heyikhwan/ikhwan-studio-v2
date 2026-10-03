@@ -1,7 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Archive Project | Ikhwanul Akhmad. DLY",
+    title: "Archive Project",
+    description: "A complete archive of web projects built by Ikhwanul Akhmad. DLY.",
+    alternates: { canonical: "/projects" },
 };
 
 const ProjectLayout = ({ children }: { children: React.ReactNode }) => {
