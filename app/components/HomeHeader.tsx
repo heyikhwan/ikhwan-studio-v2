@@ -1,7 +1,9 @@
+import { FaGithub, FaInstagram, FaLinkedin, FaRegEnvelope } from "react-icons/fa6";
 import Link from "next/link";
+import SectionNav from "./SectionNav";
 import React from "react";
 
-const HomeHeader = ({ activeSection }: { activeSection: string }) => {
+const HomeHeader = () => {
     return (
         <>
             <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
@@ -16,46 +18,7 @@ const HomeHeader = ({ activeSection }: { activeSection: string }) => {
                         I specialize in bridging the idea to exceptional and
                         accessible digital experiences.
                     </p>
-                    <nav
-                        className="nav hidden lg:block"
-                        aria-label="In-page jump links"
-                    >
-                        <ul className="mt-16 w-max">
-                            <li>
-                                <Link
-                                    className="group flex items-center py-3"
-                                    href="#about"
-                                >
-                                    <span className={`nav-indicator mr-4 h-px transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none ${activeSection === "about" ? "w-16 bg-slate-200" : "w-8 bg-slate-600"}`}></span>
-                                    <span className={`nav-text text-xs font-bold uppercase tracking-widest transition-colors group-hover:text-slate-200 group-focus-visible:text-slate-200 ${activeSection === "about" ? "text-slate-200" : "text-slate-500"}`}>
-                                        About
-                                    </span>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    className="group flex items-center py-3"
-                                    href="#experience"
-                                >
-                                    <span className={`nav-indicator mr-4 h-px transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none ${activeSection === "experience" ? "w-16 bg-slate-200" : "w-8 bg-slate-600"}`}></span>
-                                    <span className={`nav-text text-xs font-bold uppercase tracking-widest transition-colors group-hover:text-slate-200 group-focus-visible:text-slate-200 ${activeSection === "experience" ? "text-slate-200" : "text-slate-500"}`}>
-                                        Experience
-                                    </span>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    className="group flex items-center py-3"
-                                    href="#projects"
-                                >
-                                    <span className={`nav-indicator mr-4 h-px transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none ${activeSection === "projects" ? "w-16 bg-slate-200" : "w-8 bg-slate-600"}`}></span>
-                                    <span className={`nav-text text-xs font-bold uppercase tracking-widest transition-colors group-hover:text-slate-200 group-focus-visible:text-slate-200 ${activeSection === "projects" ? "text-slate-200" : "text-slate-500"}`}>
-                                        Projects
-                                    </span>
-                                </Link>
-                            </li>
-                        </ul>
-                    </nav>
+                    <SectionNav />
                 </div>
 
                 <ul
@@ -70,7 +33,7 @@ const HomeHeader = ({ activeSection }: { activeSection: string }) => {
                             rel="noreferrer"
                         >
                             <span className="sr-only">GitHub</span>
-                            <i className="fa-brands fa-github"></i>
+                            <FaGithub aria-hidden="true" />
                         </a>
                     </li>
                     <li className="mr-5 text-2xl">
@@ -81,7 +44,7 @@ const HomeHeader = ({ activeSection }: { activeSection: string }) => {
                             rel="noreferrer"
                         >
                             <span className="sr-only">Mail</span>
-                            <i className="fa-regular fa-envelope"></i>
+                            <FaRegEnvelope aria-hidden="true" />
                         </a>
                     </li>
                     <li className="mr-5 text-2xl">
@@ -92,7 +55,7 @@ const HomeHeader = ({ activeSection }: { activeSection: string }) => {
                             rel="noreferrer"
                         >
                             <span className="sr-only">Instagram</span>
-                            <i className="fa-brands fa-instagram"></i>
+                            <FaInstagram aria-hidden="true" />
                         </a>
                     </li>
                     <li className="mr-5 text-2xl">
@@ -103,7 +66,7 @@ const HomeHeader = ({ activeSection }: { activeSection: string }) => {
                             rel="noreferrer"
                         >
                             <span className="sr-only">LinkedIn</span>
-                            <i className="fa-brands fa-linkedin"></i>
+                            <FaLinkedin aria-hidden="true" />
                         </a>
                     </li>
                 </ul>

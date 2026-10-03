@@ -1,20 +1,8 @@
+import { FaArrowRightLong } from "react-icons/fa6";
 import ExperienceCard from "./ExperienceCard";
-import { useEffect, useState } from "react";
+import { experiences } from "../lib/data";
 
 const HomeExperience = () => {
-    const [data, setData] = useState<any[]>([]);
-
-    useEffect(() => {
-        const fetchExperiences = async () => {
-            const response = await fetch("/data/experiences.json");
-            const experiences = await response.json();
-            const sortedExperiences = experiences.sort((a: any, b: any) => b.id - a.id);
-            setData(sortedExperiences);
-        };
-
-        fetchExperiences();
-    }, []);
-
     return (
         <section
             id="experience"
@@ -28,7 +16,7 @@ const HomeExperience = () => {
             </div>
             <div>
                 <ol className="group/list">
-                    {data.map((item: any) => (
+                    {experiences.map((item) => (
                         <li className="mb-12" key={item.id}>
                             <ExperienceCard
                                 title={item.title}
@@ -60,7 +48,7 @@ const HomeExperience = () => {
                                     {" "}
                                     Vitae
                                 </span>
-                                <i className="fa-solid fa-arrow-right-long ml-2 inline-block h-3 w-3 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none"></i>
+                                <FaArrowRightLong className="ml-2 inline-block shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none" aria-hidden="true" />
                             </span>
                         </span>
                     </a>

@@ -1,25 +1,28 @@
-import Script from "next/script";
+"use client";
 
-const SpotLight = () => {
-    const handleMouseMove = (e: any) => {
-        const spotlight = document.getElementById("spotlight");
-        if (spotlight) {
-            spotlight.style.setProperty("--x", e.clientX + "px");
-            spotlight.style.setProperty("--y", e.clientY + "px");
-        }
-    };
+import { useEffect, useRef } from "react";
+
+const Spotlight = () => {
+    const ref = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const handleMouseMove = (e: MouseEvent) => {
+            ref.current?.style.setProperty("--x", e.clientX + "px");
+            ref.current?.style.setProperty("--y", e.clientY + "px");
+        };
+
+        window.addEventListener("mousemove", handleMouseMove);
+        return () => window.removeEventListener("mousemove", handleMouseMove);
+    }, []);
 
     return (
-        <>
-            <div
-                id="spotlight"
-                className="pointer-events-none fixed inset-0 z-30 transition duration-300"
-            ></div>
-            <Script id="handleSpotlight">
-                {`window.addEventListener("mousemove", ${handleMouseMove})`}
-            </Script>
-        </>
+        <div
+            ref={ref}
+            id="spotlight"
+            aria-hidden="true"
+            className="pointer-events-none fixed inset-0 z-30 transition duration-300"
+        ></div>
     );
 };
 
-export default SpotLight;
+export default Spotlight;

@@ -1,3 +1,4 @@
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import React from "react";
 import Badge from "./Badge";
 
@@ -7,7 +8,7 @@ type ExperienceCardProps = {
     start: string;
     end: string;
     description: string;
-    link: string | undefined;
+    link?: string;
     skills: string[];
 };
 
@@ -43,7 +44,7 @@ const ExperienceCard = ({
                             <span className="inline-flex gap-2 items-center">
                                 {title}
                                 {link && (
-                                    <i className="fa-solid fa-up-right-from-square inline-block h-2.5 w-2.5 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none translate-y-px"></i>
+                                    <FaArrowUpRightFromSquare className="inline-block shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none translate-y-px" aria-hidden="true" />
                                 )}
                             </span>
                         </a>

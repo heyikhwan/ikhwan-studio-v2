@@ -1,21 +1,9 @@
+import { FaArrowRightLong } from "react-icons/fa6";
 import ProjectCard from "./ProjectCard";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { projects } from "../lib/data";
 
 const HomeProject = () => {
-    const [data, setData] = useState<any[]>([]);
-
-    useEffect(() => {
-        const fetchProjects = async () => {
-            const response = await fetch("/data/projects.json");
-            const projects = await response.json();
-            const sortedProjects = projects.sort((a: any, b: any) => b.id - a.id);
-            setData(sortedProjects);
-        };
-
-        fetchProjects();
-    }, []);
-
     return (
         <section
             id="projects"
@@ -29,8 +17,8 @@ const HomeProject = () => {
             </div>
             <div>
                 <ul className="group/list">
-                    {data.map(
-                        (item: any) =>
+                    {projects.map(
+                        (item) =>
                             item.selected && (
                                 <li className="mb-12" key={item.id}>
                                     <ProjectCard
@@ -62,7 +50,7 @@ const HomeProject = () => {
                                     {" "}
                                     Archive
                                 </span>
-                                <i className="fa-solid fa-arrow-right-long ml-2 inline-block h-3 w-3 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none"></i>
+                                <FaArrowRightLong className="ml-2 inline-block shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none" aria-hidden="true" />
                             </span>
                         </span>
                     </Link>

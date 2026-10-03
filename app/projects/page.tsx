@@ -1,30 +1,16 @@
-"use client";
-
+import { FaArrowRightLong, FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
 import Link from "next/link";
 import Badge from "../components/Badge";
-import { useEffect, useState } from "react";
+import { projects } from "../lib/data";
 
 const ProjectPage = () => {
-    const [data, setData] = useState<any[]>([]);
-
-    useEffect(() => {
-        const fetchProjects = async () => {
-            const response = await fetch("/data/projects.json");
-            const projects = await response.json();
-            const sortedProjects = projects.sort((a: any, b: any) => b.id - a.id);
-            setData(sortedProjects);
-        };
-
-        fetchProjects();
-    }, []);
-
     return (
         <main className="lg:py-24">
             <Link
                 className="group mb-2 inline-flex items-center font-semibold leading-tight text-sky-300"
                 href="/"
             >
-                <i className="fa-solid fa-arrow-right-long mr-2 h-3 w-3 rotate-180 transition-transform group-hover:-translate-x-2"></i>
+                <FaArrowRightLong className="mr-2 rotate-180 transition-transform group-hover:-translate-x-2" aria-hidden="true" />
                 Ikhwanul Akhmad. DLY
             </Link>
             <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
@@ -54,8 +40,7 @@ const ProjectPage = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {data &&
-                        data.map((item: any) => (
+                    {projects.map((item) => (
                             <tr
                                 className="border-b border-slate-300/10 last:border-none"
                                 key={item.id}
@@ -83,7 +68,7 @@ const ProjectPage = () => {
                                                     <span className="flex items-center gap-2">
                                                         {item.title}
                                                         {item.link && (
-                                                            <i className="fa-solid fa-up-right-from-square inline-block h-2.5 w-2.5 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"></i>
+                                                            <FaArrowUpRightFromSquare className="inline-block shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true" />
                                                         )}
                                                     </span>
                                                 </span>
@@ -106,15 +91,12 @@ const ProjectPage = () => {
                                     <ul className="flex -translate-y-1.5 flex-wrap">
                                         {item.techStack &&
                                             item.techStack.map(
-                                                (
-                                                    item: string,
-                                                    index: number
-                                                ) => (
+                                                (tech, index) => (
                                                     <li
                                                         className="my-1 mr-1.5"
                                                         key={index}
                                                     >
-                                                        <Badge name={item} />
+                                                        <Badge name={tech} />
                                                     </li>
                                                 )
                                             )}
@@ -137,7 +119,7 @@ const ProjectPage = () => {
                                                                 .split("//")[1]
                                                                 .split("/")[0]
                                                         }
-                                                        <i className="fa-solid fa-up-right-from-square inline-block h-2.5 w-2.5 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none translate-y-px"></i>
+                                                        <FaArrowUpRightFromSquare className="inline-block shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none translate-y-px" aria-hidden="true" />
                                                     </span>
                                                 </a>
                                             </li>
@@ -152,7 +134,7 @@ const ProjectPage = () => {
                                                     aria-label={item.title}
                                                 >
                                                     <span className="flex gap-2 items-center">
-                                                        <i className="fa-brands fa-github h-4 w-4"></i>
+                                                        <FaGithub aria-hidden="true" />
                                                         Github
                                                     </span>
                                                 </a>
@@ -161,7 +143,7 @@ const ProjectPage = () => {
                                     </ul>
                                 </td>
                             </tr>
-                        ))}
+                    ))}
                 </tbody>
             </table>
         </main>
